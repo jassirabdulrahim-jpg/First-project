@@ -1,40 +1,183 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jass | Developer Journey</title>
+
   <style>
-    body {
-      background: #101827;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 60px 20px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    h1 {
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1120;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #263247;
+    }
+
+    .logo {
+      color: #38bdf8;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
       color: #38bdf8;
     }
 
+    .hero p {
+      color: #a9b7cc;
+      max-width: 500px;
+      margin: 0 auto 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #0284c7;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #38bdf8;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
     .card {
-      background: #1e293b;
+      background: #182338;
       padding: 25px;
       border-radius: 15px;
-      max-width: 400px;
-      margin: 30px auto;
+      border: 1px solid #263850;
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #172c44;
+      border: 1px solid #245175;
+      color: #7dd3fc;
+      padding: 10px 16px;
+      border-radius: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #8493a8;
+      border-top: 1px solid #263247;
     }
   </style>
 </head>
+
 <body>
 
-  <h1>Welcome to My Website 🚀</h1>
+  <header>
+    <div class="logo">JASS.dev</div>
 
-  <div class="card">
-    <h2>I'm learning technology</h2>
-    <p>This is my first website built using GitHub.</p>
-    <p>My journey starts here.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Hello, I'm <span>Jass</span> 👋</h1>
+
+    <p>
+      A beginner developer exploring technology,
+      AI tools, coding and the digital world.
+    </p>
+
+    <a href="#about" class="btn">Explore My Journey</a>
   </div>
 
+  <section id="about">
+    <h2>About Me</h2>
+
+    <div class="card">
+      <p>
+        I'm learning how to build websites and explore
+        new technologies. My journey started with curiosity
+        and the desire to create something useful.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>What I'm Learning</h2>
+
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">AI Tools</div>
+      <div class="skill">Web Development</div>
+      <div class="skill">GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="card">
+      <h3>🚀 My First Website</h3>
+
+      <p>
+        My first website published using GitHub Pages.
+        This is the beginning of my coding journey.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Building my future one step at a time.</p>
+    <p>© 2026 JASS.dev</p>
+  </footer>
+
 </body>
-</html>
+  </html>
+
